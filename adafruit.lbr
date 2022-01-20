@@ -33847,6 +33847,12 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <smd name="4" x="3.81" y="0" dx="1.27" dy="3.81" layer="1"/>
 <smd name="1" x="-3.81" y="0" dx="1.27" dy="3.81" layer="1"/>
 </package>
+<package name="1X4-SMT-LONG-NARROW">
+<smd name="2" x="-0.635" y="0" dx="0.8" dy="3.81" layer="1"/>
+<smd name="3" x="0.635" y="0" dx="0.8" dy="3.81" layer="1"/>
+<smd name="4" x="1.905" y="0" dx="0.8" dy="3.81" layer="1"/>
+<smd name="1" x="-1.905" y="0" dx="0.8" dy="3.81" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK">
@@ -51712,6 +51718,17 @@ Ultra-small 8-bit PIC micros in SOT-23-6 and SOIC</description>
 </technologies>
 </device>
 <device name="SMT-LONG" package="1X4-SMT-LONG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMT-LONG-NARROW" package="1X4-SMT-LONG-NARROW">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
