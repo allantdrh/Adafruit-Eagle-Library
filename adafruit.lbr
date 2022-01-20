@@ -33853,6 +33853,10 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <smd name="4" x="1.905" y="0" dx="0.8" dy="3.81" layer="1"/>
 <smd name="1" x="-1.905" y="0" dx="0.8" dy="3.81" layer="1"/>
 </package>
+<package name="1X2-SMT-LONG">
+<smd name="1" x="-1.27" y="0" dx="1.27" dy="3.81" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.27" dy="3.81" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK">
@@ -46828,6 +46832,15 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </gates>
 <devices>
 <device name="-3.5MM" package="1X2-3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMT-LONG" package="1X2-SMT-LONG">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
